@@ -505,7 +505,7 @@ button:focus {
         border-radius: 50%;
         outline: none;
         position: absolute;
-        left: -18px;
+        left: -35px;
         top: 10px;
         z-index: 112
     }
