@@ -298,6 +298,7 @@
     }
     .hx-about-style-1 {
         padding: 60px 0;
+        overflow:hidden ;
     }
     .section-title h2 {
         font-size: 30px;
