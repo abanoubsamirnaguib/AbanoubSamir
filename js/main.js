@@ -53,12 +53,14 @@ $(function () {
                 if (isOpen) {
                         // $('#navbar').removeClass();
                         $('#navbar').addClass('active');
+                        $(".close-navbar").fadeIn();
                 } else { $('#navbar').removeClass('active'); }
         });
         $(".close-navbar").click(function () {
                 isOpen = false;
                 if (!isOpen) {
                         $('#navbar').removeClass('active');
+                        $(this).fadeOut();
                 }
                 else { $('#navbar').addClass('active') };
         });
