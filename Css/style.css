@@ -1,0 +1,611 @@
+.po-first .po-bg-dark {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: fit-content;
+    height: fit-content;
+    padding-top: 30px;
+}
+
+.po-first .navbar {
+    justify-content: flex-start;
+}
+
+.po-first .navbar-brand h2 {
+    font-family: "Lobster", cursive;
+    color: white;
+    text-shadow: 5px 7px 5px #EEE;
+}
+
+.po-first .nav-pills {
+    left: 15%;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    text-shadow: 2px 2px 5px #AAA;
+}
+
+@media (min-width: 1200px) {
+    .po-first .nav-pills {
+        position: relative;
+    }
+}
+
+.po-first .intro {
+    /*margin-top:64px;*/
+    background: url(../../img/new/Preview_Image_00000.jpg);
+    background-size: cover;
+    width: 100%;
+    /*height:600px;*/
+}
+
+.po-first .intro .icon {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .po-first .intro img {
+        width: 15%;
+        height: 250px;
+        border-radius: 10%;
+    }
+}
+
+.po-first .intro h2 {
+    font-size: 40px;
+    /*font-family: 'Abril Fatface', cursive;*/
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 9px;
+    margin: 10px 0 5px;
+}
+
+.po-first .intro h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-shadow: 5px 5px 5px #EEE;
+}
+
+.po-first .intro p {
+    margin: auto;
+    padding: 10px;
+    width: fit-content;
+    font-size: large;
+    background: rgba(0, 0, 0, 0.7) center center;
+    background-size: contain;
+    font-family: "Roboto Mono", monospace;
+}
+
+.po-first .intro a {
+    display: block;
+    color: #cc0000;
+    margin: 10px auto;
+    font-size: 30px;
+    font-weight: bolder;
+    width: fit-content;
+    padding: 10px 30px;
+    font-family: "Saira Semi Condensed", sans-serif;
+}
+
+#about h2 {
+    /* font-family: "Saira Semi Condensed", sans-serif; */
+    text-transform: capitalize;
+}
+
+#about p {
+    padding-top: 0px;
+    word-wrap: normal;
+    font-family: "Roboto Mono", monospace;
+}
+
+#about-me tr {
+    font-size: 18px;
+}
+
+#about table th {
+    font-size: 18px;
+    font-family: "Lobster", cursive;
+}
+
+#about a {
+    color: fff;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+#about a svg {
+    padding: 8px;
+    background-color: #d7d7d7;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+@media (min-width: 1200px) {
+    .po-first .about-me .about-me-header a svg {
+        margin: 0px 10px 50px 15px;
+    }
+}
+
+.po-first .about-me a :not(:last-of-type) {
+    border-radius: 25px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.po-first .about-me .button {
+    border-radius: 25px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.po-first .about-me .about-me-photo img {
+    width: 90%;
+    height: 100%;
+    margin: 50px 20px 0 0;
+}
+
+.facebook:hover path {
+    /* font-size: 25px; */
+    color: #4267b2;
+    /*     background-color:rgba(66,103,178,1); */
+}
+
+.github:hover path {
+    /* background-color:#ffffff; */
+    /* color: rgb(174, 151, 183); */
+}
+
+.instagram:hover path {
+    color: #ef067a;
+    /*     background-color:rgba(66,103,178,1); */
+}
+
+.linkedin:hover path {
+    color: #1ab2e8;
+    /*     background-color:rgba(66,103,178,1); */
+}
+
+.about-me a:hover .facebook path {
+    color: #4267b2;
+}
+
+.about-me a:hover .github path {
+    /* background-color:#ffffff; */
+    color: rgba(39, 90, 193, 0.8);
+}
+
+.about-me a:hover .instagram path {
+    color: #ef067a;
+    /*     background-color:rgba(66,103,178,1); */
+}
+
+.about-me a:hover .linkedin path {
+    color: #1ab2e8;
+    /*     background-color:rgba(66,103,178,1); */
+}
+
+.po-first .Education {
+    padding-top: 115px;
+    padding-bottom: 70px;
+    padding-left: 8%;
+    background-color: #EEE;
+}
+
+.po-first .Education h4 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: bolder;
+}
+
+.po-first .Education h3 {
+    font-size: 20px;
+}
+
+.po-first .skills {
+    overflow: hidden;
+    background: url("../..//img/new/pro3n.jpg") 35% 100% no-repeat;
+    /*                    prog1{
+                          position: absolute;
+                          top: 320px;
+                          left: -150px;
+                          width: 60%;
+                          margin-left:($i*15%);
+                          margin-top: 0px;
+                          color: white;
+                          height:30px; 
+                      } */
+    /*                    prog2{
+                          position: absolute;
+                          top: 320px;
+                          left: -150px;
+                          width: 60%;
+                          margin-left:($i*15%);
+                          margin-top: 0px;
+                          color: white;
+                          height:30px; 
+                      } */
+    /*                    prog3{
+                          position: absolute;
+                          top: 320px;
+                          left: -150px;
+                          width: 60%;
+                          margin-left:($i*15%);
+                          margin-top: 0px;
+                          color: white;
+                          height:30px; 
+                      } */
+    /*                    prog4{
+                          position: absolute;
+                          top: 320px;
+                          left: -150px;
+                          width: 60%;
+                          margin-left:($i*15%);
+                          margin-top: 0px;
+                          color: white;
+                          height:30px; 
+                      } */
+}
+
+.po-first .skills>div {
+    height: 600px;
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+.po-first .skills>div div {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.po-first .skills>div div h4 {
+    font-size: 40px;
+    font-family: serif;
+    letter-spacing: 8px;
+    padding-bottom: 7%;
+}
+
+.po-first .skills>div div p {
+    font-family: "Saira Semi Condensed", sans-serif;
+    word-spacing: 3px;
+    font-size: 20px;
+}
+
+.po-first .skills>div div ul {
+    line-height: 40px;
+    padding-left: 8%;
+    word-spacing: 5px;
+}
+
+.po-first .skills .prog1 {
+    position: absolute;
+    top: 60%;
+    left: -15%;
+    padding-right: 50px;
+    transform: rotateZ(-90deg);
+    width: 50%;
+    height: 40px;
+    margin-left: 50%;
+}
+
+.po-first .skills .prog2 {
+    position: absolute;
+    top: 60%;
+    left: -30%;
+    padding-right: 50px;
+    transform: rotateZ(-90deg);
+    width: 50%;
+    height: 40px;
+    margin-left: 50%;
+}
+
+.po-first .skills .prog3 {
+    position: absolute;
+    top: 60%;
+    left: -45%;
+    padding-right: 50px;
+    transform: rotateZ(-90deg);
+    width: 50%;
+    height: 40px;
+    margin-left: 50%;
+}
+
+.po-first .skills .prog4 {
+    position: absolute;
+    top: 60%;
+    left: -60%;
+    padding-right: 50px;
+    transform: rotateZ(-90deg);
+    width: 50%;
+    height: 40px;
+    margin-left: 50%;
+}
+
+.po-first .skills .number {
+    position: absolute;
+    /*display:flex;*/
+    padding: 10px 0px 20px 30px;
+    /*margin-bottom:20px;*/
+    top: 26%;
+}
+
+.po-first .portfolio {
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+}
+
+.po-first .portfolio h4 {
+    padding-top: 20px;
+    padding-left: 20px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-family: serif;
+    font-weight: bold;
+    text-decoration: overline underline line-through;
+    font-size: 30px;
+}
+
+#myphto {
+    width: 9%;
+    height: 9%;
+    margin-top: auto;
+    border-radius: 15%;
+}
+
+.idiot {
+    background: url("../media/pro2.jpg") no-repeat right top fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.idiot p {
+    width: 75%;
+}
+
+.po-first .portfolio ul li a {
+    font-family: "Saira Semi Condensed", sans-serif;
+    letter-spacing: 1px;
+}
+
+.po-first .contactUS {
+    padding: 0px;
+    background: url("../..//img/new/1.jpg") center;
+    background-size: cover;
+    color: white;
+}
+
+.po-first .contactUS .bg-as1 {
+    padding: 20px;
+    background-color: rgba(2, 2, 2, 0.8);
+    background-size: cover;
+}
+
+.po-first .contactUS input[Type=text] {
+    border-radius: 55px 0px;
+}
+
+.po-first .contactUS .input-group input[Type=text],
+.po-first .contactUS .contactUS .input-group-text {
+    border-radius: 0px 55px 55px 0px;
+}
+
+.po-first .contactUS .input-group-prepend .input-group-text {
+    border-radius: 55px 0px 0px 0px;
+    text-indent: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+.po-first .footer {
+    overflow: hidden;
+}
+
+.po-first .footer .icons {
+    position: relative;
+    left: 35%;
+    padding: 3rem 0rem 1rem 0rem;
+    margin: auto;
+}
+
+.po-first .footer .icons a {
+    color: black;
+}
+
+.po-first .footer .icons a svg {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #ffc107;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+@media (min-width: 1200px) {
+    .po-first .footer .icons a svg {
+        margin: 0px 10px 50px 15px;
+    }
+}
+
+.po-first .footer .icons #CV2 {
+    position: relative;
+    left: -19%;
+}
+
+.po-first .footer p {
+    position: relative;
+    top: 0%;
+}
+
+.po-first .footer p span {
+    font-family: "Lobster", cursive;
+    font-size: larger;
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+.footer-sub .up {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.footer-sub .up:hover {
+    background-color: dimgray;
+}
+
+.footer-area .footer-menu .facebook:hover {
+    color: #4267b2;
+    /*     background-color:rgba(66,103,178,1); */
+    border-radius: 50%;
+}
+
+.footer-area .footer-menu .linkedin:hover {
+    color: #0077b4;
+    /*     background-color:rgba(66,103,178,1); */
+    border-radius: 50%;
+}
+
+.footer-area .footer-menu .instagram:hover {
+    color: #ef067a;
+    /*     background-color:rgba(66,103,178,1); */
+    /* border: black solid 50%; */
+    border-radius: 50%;
+}
+
+.footer-area .footer-menu .github:hover {
+    /* background-color: #fff; */
+    background-color: rgba(66, 103, 178, .6);
+    /* color: rgba(39, 90, 193, 0.8); */
+    border-radius: 50%;
+}
+
+
+/*mobile*/
+
+@media (max-width: 768px) {
+    .po-first nav ul {
+        display: block;
+        position: static;
+    }
+    .po-first nav .navbar-toggler {
+        margin: 0px 0px 0px 15%;
+        justify-content: flex-start;
+    }
+    .po-first .intro {
+        overflow: scroll;
+    }
+    .po-first .intro img {
+        width: 50%;
+        border-radius: 10%;
+    }
+    .po-first .intro h2 {
+        letter-spacing: 6px;
+    }
+    .po-first .intro h3 {
+        font-size: 25px;
+    }
+    .po-first .intro p {
+        font-family: "Lobster", cursive;
+        font-size: 25px;
+    }
+    .po-first .about-me img {
+        display: none;
+    }
+    .po-first .about-me .about-me-header {
+        padding-top: 80px;
+        padding-left: 5%;
+    }
+    .po-first .about-me .button {
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: "Lobster", cursive;
+        letter-spacing: 2px;
+        margin-left: 15%;
+    }
+    .po-first .about-me a svg {
+        margin: 0px 0px 50px 10px;
+    }
+    .po-first .Education {
+        padding-top: 80px;
+        padding-bottom: 5px;
+    }
+    .po-first .Education div div {
+        margin-bottom: 10px;
+    }
+    .po-first .skills {
+        height: fit-content;
+    }
+    .po-first .skills>div div h4 {
+        margin-top: 40px;
+    }
+    .po-first .skills .chart {
+        display: none;
+    }
+    .po-first .portfolio>div div>ul {
+        margin: 0px 20px 0px 20px;
+        width: fit-content;
+        padding: 0px;
+    }
+     #myphto {
+        width: 60%;
+        margin-left: 6%;
+    }
+     .idiot p {
+        width: fit-content;
+    }
+    .po-first .contactUS h4 {
+        font-size: 20px;
+    }
+    .po-first .footer .icons {
+        left: 20%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .po-first .footer .icons #CV2 {
+        left: 0px;
+        margin-left: 50px;
+        margin-top: 25px;
+        font-family: "Lobster", cursive;
+    }
+    .footer-sub a {
+        width: fit-content;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+
+/*font family
+font-family: 'Oswald', sans-serif; >>head 0
+font-family: 'Roboto Mono', monospace; 2
+font-family: 'Saira Semi Condensed', sans-serif;  >> sub-head 7
+font-family: 'Raleway', sans-serif;   >>navbar 2
+font-family: 'Libre Baskerville', serif; 0 
+font-family: 'Indie Flower', cursive; 1 >> portifillo
+font-family: 'Anton', sans-serif; 0
+font-family: 'Lobster', cursive; 4
+font-family: 'Dancing Script', cursive; 1
+*/
+
+
+/*# sourceMappingURL=style.css.map */
