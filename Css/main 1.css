@@ -475,7 +475,7 @@ button:focus {
         background: #fff;
         display: block!important;
         width: 280px;
-        height: 100%!important;
+        height: fit-content !important;
         margin: 0;
         padding: 0;
         border-left: 1px solid #ccc;
