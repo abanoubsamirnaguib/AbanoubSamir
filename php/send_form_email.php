@@ -1,4 +1,5 @@
 <?php
+echo"hello ,";     
         if(isset($_POST['email'])) {
         $email_to = "abanoubsamir@gmail.com";
         $email_subject = "Email From Portfolio";
@@ -59,11 +60,10 @@
         $headers='From: '.$email_from."\r\n".
         'Reply-To: '.$email_from."\r\n".
         'X-Mailer: PHP/' . phpversion();
-        if( (mail($email_to, $email_subject, $email_message, $headers)) ){
+        if( (@mail($email_to, $email_subject, $email_message, $headers)) ){
             echo ('Thank you for contacting us. We will be in touch with you very soon.');
         }
         // <!-- include your own success html here -->
-
-          
+             
 }
 ?>
