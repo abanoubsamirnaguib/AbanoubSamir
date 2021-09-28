@@ -2101,7 +2101,7 @@ button:focus {
     padding: 5px 10px;
     font-size: 16px;
     text-align: center;
-    display: none
+    display: block ;
 }
 
 .contact-validation-active #loader {
@@ -2123,8 +2123,8 @@ button:focus {
 }
 
 .contact-validation-active #error {
-    background-color: #ff1a1a;
-    border-left: 5px solid red
+    /* background-color: #ff1a1a;
+    border-left: 5px solid red */
 }
 
 .contact-validation-active label.error {
