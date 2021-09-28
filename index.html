@@ -1045,8 +1045,8 @@
                             <h2>Quick Contact Form</h2>
                             <div class="contact-form">
                                 <!-- action="php/send_form_email.php" -->
-                                <form   action="https://formspree.io/f/mbjqbjra"
-                                method="POST" class="contact-validation-active" id="my-form"  onsubmit="sendContact(event)">
+                                <form action="https://formspree.io/f/mbjqbjra" method="POST"
+                                    class="contact-validation-active" id="my-form" onsubmit="sendContact(event)">
                                     <div class="half-col">
                                         <input type="text" name="name" id="name" class="form-control"
                                             placeholder="Your Name">
@@ -1067,7 +1067,8 @@
                                             placeholder="Your Massage...">
                                         </textarea></div>
 
-                                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                                    <input type="hidden" name="_subject" id="email-subject"
+                                        value="Contact Form Submission">
 
                                     <div class="submit-btn-wrapper">
                                         <button type="submit" class="theme-btn-s3">Submit</button>
@@ -1081,26 +1082,29 @@
                                     </div>
                                 </form>
                                 <script>
-                                function sendContact(e) {
-                                    e.preventDefault();
+                                    function sendContact(e) {
+                                        e.preventDefault();
 
                                         jQuery.ajax({
                                             url: "https://formspree.io/f/mbjqbjra",
-                                            data:'name='+$("#name").val()+'&email='+
-                                            $("#email").val()+'&phone='+$("#phone").val()+'&address='+
-                                            $("#address").val()+'&note='+
-                                            $("#note").val(),
+                                            headers: {
+                                                'Accept': 'application/json'
+                                            },
+                                            data: 'name=' + $("#name").val() + '&email=' +
+                                                $("#email").val() + '&phone=' + $("#phone").val() + '&address=' +
+                                                $("#address").val() + '&note=' +
+                                                $("#note").val(),
                                             type: "POST",
-                                            success:function(data){
+                                            success: function (data) {
                                                 $("#success").html(data);
                                                 console.log(data);
                                             },
-                                            error:function(data){
+                                            error: function (data) {
                                                 $("#error").html(data);
                                             }
                                         });
                                     }
-                                
+
                                 </script>
                             </div>
                         </div>
