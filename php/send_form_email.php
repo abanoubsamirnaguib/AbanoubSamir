@@ -1,11 +1,11 @@
 <?php
 if(isset($_POST['email'])) {
  
-//    // EDIT THE 2 LINES BELOW AS REQUIRED
+//   // EDIT THE 2 LINES BELOW AS REQUIRED 
     $email_to = "abanoubsamir@gmail.com";
-    $email_subject = "Email From Portofoli";
- 
-    function died($error) {
+    $email_subject = "Email From Portfolio";
+ 
+function died($error) {
         // your error code can go here
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
