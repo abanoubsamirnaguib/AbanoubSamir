@@ -1044,13 +1044,23 @@
                         <div class="contact-area contact-area-2 contact-area-3">
                             <h2>Quick Contact Form</h2>
                             <div class="contact-form">
+<<<<<<< HEAD
                                 <form method="post" class="contact-validation-active" id="contact-form" action="php/send_form_email.php">
+=======
+                                <!-- action="php/send_form_email.php" -->
+                                <form action="https://formspree.io/f/mbjqbjra" method="POST"
+                                    class="contact-validation-active" id="my-form" onsubmit="sendContact(event)">
+>>>>>>> b3fd25aa475210e9645cae3b90e396294f48f236
                                     <div class="half-col">
                                         <input type="text" name="name" id="name" class="form-control"
                                             placeholder="Your Name">
                                     </div>
                                     <div class="half-col">
+<<<<<<< HEAD
                                         <input type="email" name="email" id="email" class="form-control"
+=======
+                                        <input type="email" name="_replyto" id="email" class="form-control"
+>>>>>>> b3fd25aa475210e9645cae3b90e396294f48f236
                                             placeholder="Your Email">
                                     </div>
                                     <div class="half-col">
@@ -1061,22 +1071,55 @@
                                         <input type="text" name="address" id="address" class="form-control"
                                             placeholder="Address">
                                     </div>
+<<<<<<< HEAD
                                     <div><textarea class="form-control" name="note" id="note"
                                             placeholder="Your Massage...">
                                         </textarea></div>
+=======
+                                    <div><textarea class="form-control" name="message" id="note"
+                                            placeholder="Your Massage...">
+                                        </textarea></div>
+
+                                    <input type="hidden" name="_subject" id="email-subject"
+                                        value="Contact Form Submission">
+
+>>>>>>> b3fd25aa475210e9645cae3b90e396294f48f236
                                     <div class="submit-btn-wrapper">
                                         <button type="submit" class="theme-btn-s3">Submit</button>
                                         <!-- <div id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div> -->
                                     </div>
                                     <div class="clearfix error-handling-messages">
                                         <div id="success">
-                                            <!-- Thank you -->
                                         </div>
                                         <div id="error">
-                                            <!-- Error occurred while sending email. Please try again later. -->
                                         </div>
                                     </div>
                                 </form>
+                                <script>
+                                    function sendContact(e) {
+                                        e.preventDefault();
+
+                                        jQuery.ajax({
+                                            url: "https://formspree.io/f/mbjqbjra",
+                                            headers: {
+                                                'Accept': 'application/json'
+                                            },
+                                            data: 'name=' + $("#name").val() + '&_replyto=' +
+                                                $("#email").val() + '&phone=' + $("#phone").val() + '&address=' +
+                                                $("#address").val() + '&message=' +
+                                                $("#note").val(),
+                                            type: "POST",
+                                            success: function (data) {
+                                                $("#success").html(data);
+                                                console.log(data);
+                                            },
+                                            error: function (data) {
+                                                $("#error").html(data);
+                                            }
+                                        });
+                                    }
+
+                                </script>
                             </div>
                         </div>
                     </div>
