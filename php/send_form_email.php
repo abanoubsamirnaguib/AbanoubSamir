@@ -16,21 +16,23 @@ function died($error) {
  
  
     // validation expected data exists
-    if(!isset($_POST['first_name']) ||
+    if(!isset($_POST['name']) ||
         
         !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
-        !isset($_POST['comments'])) {
+        !isset($_POST['phone']) ||
+        !isset($_POST['address']) ||
+        !isset($_POST['note'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
  
      
  
-    $first_name = $_POST['first_name']; // required
+    $first_name = $_POST['name']; // required
     
     $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
+    $telephone = $_POST['phone']; // not required
+    $address = $_POST['address']; // not required
+    $comments = $_POST['note']; // required
  
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -45,9 +47,9 @@ function died($error) {
     $error_message .= 'The First Name you entered does not appear to be valid.<br />';
   }
  
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
+//   if(!preg_match($string_exp,$last_name)) {
+//     $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+//   }
  
   if(strlen($comments) < 2) {
     $error_message .= 'The Comments you entered do not appear to be valid.<br />';
@@ -71,6 +73,7 @@ function died($error) {
  
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
+    $email_message .= "address: ".clean_string($address)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
  
 // create email headers
@@ -85,6 +88,6 @@ $headers = 'From: '.$email_from."\r\n".
 Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
- 
+header("location:index.html");
 }
 ?>

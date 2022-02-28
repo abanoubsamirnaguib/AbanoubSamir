@@ -28,7 +28,7 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using create-react-app">
+    <meta name="description" content="Abanoub Samir Full-Stack Programmer Web site">
     <link rel="apple-touch-icon" href="/logo192.png">
     <link rel="manifest" href="/manifest.json">
     <title>Abanoub Samir</title>
@@ -1044,19 +1044,28 @@
                         <div class="contact-area contact-area-2 contact-area-3">
                             <h2>Quick Contact Form</h2>
                             <div class="contact-form">
-                                <form method="post" class="contact-validation-active" id="contact-form">
-                                    <div class="half-col"><input type="text" name="name" id="name" class="form-control"
-                                            placeholder="Your Name"></div>
-                                    <div class="half-col"><input type="email" name="email" id="email"
-                                            class="form-control" placeholder="Your Email"></div>
-                                    <div class="half-col"><input type="text" name="phone" id="phone"
-                                            class="form-control" placeholder="Your Phone"></div>
-                                    <div class="half-col"><input type="text" name="address" id="address"
-                                            class="form-control" placeholder="Address"></div>
+                                <form method="post" class="contact-validation-active" id="contact-form" action="php/send_form_email.php">
+                                    <div class="half-col">
+                                        <input type="text" name="name" id="name" class="form-control"
+                                            placeholder="Your Name">
+                                    </div>
+                                    <div class="half-col">
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            placeholder="Your Email">
+                                    </div>
+                                    <div class="half-col">
+                                        <input type="text" name="phone" id="phone" class="form-control"
+                                            placeholder="Your Phone">
+                                    </div>
+                                    <div class="half-col">
+                                        <input type="text" name="address" id="address" class="form-control"
+                                            placeholder="Address">
+                                    </div>
                                     <div><textarea class="form-control" name="note" id="note"
-                                            placeholder="Your Massage..."></textarea></div>
-                                    <div class="submit-btn-wrapper"><button type="submit"
-                                            class="theme-btn-s3">Submit</button>
+                                            placeholder="Your Massage...">
+                                        </textarea></div>
+                                    <div class="submit-btn-wrapper">
+                                        <button type="submit" class="theme-btn-s3">Submit</button>
                                         <!-- <div id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div> -->
                                     </div>
                                     <div class="clearfix error-handling-messages">
