@@ -43,7 +43,7 @@ function add_1(Allitems) {
                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                        <div class="service-section">
                                            <div class="services-wrapper">
-                                           // width="560"
+                                           <!-- width="560" -->
                                                <iframe  height="340" class='col'
                                                    src="${item.video_src}">
                                                </iframe>
