@@ -43,7 +43,8 @@ function add_1(Allitems) {
                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                        <div class="service-section">
                                            <div class="services-wrapper">
-                                               <iframe width="560" height="340"
+                                           // width="560"
+                                               <iframe  height="340" class='col'
                                                    src="${item.video_src}">
                                                </iframe>
                                                <div class="service-content text-left">
@@ -57,9 +58,9 @@ function add_1(Allitems) {
                                                        ${add_li(item.Project_Details, " ")}
                                                    </ul>
                                                    <h2>Programming Technologies Used</h2>
-                                                   <ul class="text-capitalize  d-inline"
+                                                   <ul class="text-capitalize list-unstyled"
                                                        style="list-style-position: inside;">
-                                                       ${add_li(item.languages_Used, "class='d-inline mr-5'")}
+                                                       ${add_li(item.languages_Used, "class='d-sm-block d-lg-inline mr-5'")}
                                                    </ul>
                                                    <div>
                                                        <h2>Websites Links</h2>
