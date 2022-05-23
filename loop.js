@@ -15,15 +15,17 @@ function add_1(Allitems) {
     if (Allitems) {
         items.forEach((item, i) => {
             div += `
-       <div class="col-lg-4 col-md-6 col-sm-12 custom-grid">
+       <div class="col-lg-4 col-md-6 col-sm-12 custom-grid card-frame">
        <div class="">
            <div class="tp-protfolio-single">
-               <div class="tp-protfolio-img"><img src="${item.src}"
-                       alt=""></div>
+               <div class="tp-protfolio-img">
+               <img src="${item.src}"
+                       alt="" max-height="100%">
+                </div>
                <div class="tp-protfolio-text">
                    <h2>${item.title}</h2>
                    <span>
-                   ${item.subTitle}
+                   ${item.subtitle}
                    </span>
                    <a href="#Work-modal-overflow${i}" uk-toggle>View Work</a>
 
@@ -33,10 +35,10 @@ function add_1(Allitems) {
                                uk-close></button>
 
                            <div class="uk-modal-header">
-                               <h2 class="uk-modal-title">Title</h2>
+                               <h2 class="uk-modal-title">${item.title}</h2>
                            </div>
 
-                           <div class="uk-modal-body ">
+                           <div class="uk-modal-body">
                                <h2 class="text-center text-light text-capitalize">
                                ${item.title}</h2>
                                <div class="row" id="contents">
@@ -44,19 +46,19 @@ function add_1(Allitems) {
                                        <div class="service-section">
                                            <div class="services-wrapper">
                                            <!-- width="560" -->
-                                               <iframe  height="340" class='col'
+                                         <!--   <iframe  height="340" class='col'
                                                    src="${item.video_src}">
-                                               </iframe>
+                                               </iframe> -->
                                                <div class="service-content text-left">
                                                    <h2>Project Description</h2>
                                                    <p>
                                                    ${item.Project_Description}
                                                    </p>
                                                    <h2>Project Details</h2>
-                                                   <ul class="text-capitalize"
+                                                   <ol class="text-capitalize"  
                                                        style="list-style-position: inside;">
                                                        ${add_li(item.Project_Details, " ")}
-                                                   </ul>
+                                                   </ol>
                                                    <h2>Programming Technologies Used</h2>
                                                    <ul class="text-capitalize list-unstyled"
                                                        style="list-style-position: inside;">
@@ -65,10 +67,10 @@ function add_1(Allitems) {
                                                    <div>
                                                        <h2>Websites Links</h2>
                                                        <h5 class="divSubTitle">
-                                                           <a href="${item.Github_href}">GITHUB</a> Link
+                                                           <a target="_blank" href="${item.Github_href}">GITHUB</a> Link
                                                        </h5>
                                                        <h5 class="divSubTitle">
-                                                           <a href="${item.Demo_href}">DEMO</a> Link
+                                                           <a target="_blank" href="${item.Demo_href}">DEMO</a> Link
                                                        </h5>
                                                        ${add_liNKS(item.links)}
                                                    </div>
@@ -105,12 +107,13 @@ function add_li(Allitems, style) {
 
 function add_liNKS(Allitems) {
     var items = Allitems;
-    var div = ""
-    if (Allitems) {
-        for (item in items) {
+    var div = "";
+    if (Object.keys(Allitems).length >= 1 ) {
+        console.log(items);
+        for (let item in items) {
             div += `
             <h5 class="divSubTitle">
-            <a href="${items[item]}"> ${item} </a> Link
+            <a target="_blank" href="${items[item]}"> ${item} </a> Link
             </h5>`
         };
     }

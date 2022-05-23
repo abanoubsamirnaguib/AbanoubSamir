@@ -1,4 +1,4 @@
-testCrona *
+testCrona * *
 https://abanoubsamirnaguib.github.io/testCrona.github.io/
 https://github.com/abanoubsamirnaguib/testCrona.github.io/
 
