@@ -3,8 +3,8 @@ var d = document.getElementById("works");
 
 
 const itemsFun = async () => {
-   var items0 = await (await fetch('data.json')).json();
-   return items0;
+    var items0 = await (await fetch('data.json')).json();
+    return items0;
 }
 var items = (await itemsFun()).items;
 // console.log(items);
@@ -46,9 +46,13 @@ function add_1(Allitems) {
                                        <div class="service-section">
                                            <div class="services-wrapper">
                                            <!-- width="560" -->
-                                         <!--   <iframe  height="340" class='col'
-                                                   src="${item.video_src}">
-                                               </iframe> -->
+                                           ${(item.video_src) ? `
+                                           ${(item.video_src=='https://www.youtube.com/embed/tgbNymZ7vqY')?'video will comming soon':""}
+                
+                                           <iframe  height="340" class='col'
+                                           src="${item.video_src}">
+                                       </iframe> 
+                                           `: ""}
                                                <div class="service-content text-left">
                                                    <h2>Project Description</h2>
                                                    <p>
@@ -108,7 +112,7 @@ function add_li(Allitems, style) {
 function add_liNKS(Allitems) {
     var items = Allitems;
     var div = "";
-    if (Object.keys(Allitems).length >= 1 ) {
+    if (Object.keys(Allitems).length >= 1) {
         console.log(items);
         for (let item in items) {
             div += `
@@ -127,8 +131,8 @@ var s = document.getElementById("services");
 const servicesFun = async () => {
     var services0 = await (await fetch('data.json')).json();
     return services0;
- }
- var services = (await servicesFun()).services;
+}
+var services = (await servicesFun()).services;
 //  console.log(services);
 
 function add_2(Allitems) {
@@ -177,16 +181,16 @@ function add_2(Allitems) {
 function add_features(Allitems) {
     var items = Allitems;
     var div = "";
-    var len=4;
-    switch(items.length){
+    var len = 4;
+    switch (items.length) {
         case 2:
-        len=6;
-        break;
+            len = 6;
+            break;
         case 1:
-        len=12;
-        break;
+            len = 12;
+            break;
         default:
-            len=4;
+            len = 4;
     }
     if (Allitems) {
         items.forEach((item, i) => {
