@@ -200,6 +200,7 @@
             ],
             "links": {
                 "Database operation": "http://evening-basin-25603.herokuapp.com/login.php",
+                "github for simple and medium operation": "http://evening-basin-25603.herokuapp.com/login.php",
                 "Simple operation": "http://evening-basin-25603.herokuapp.com/Nti/task1/calc.php",
                 "Medium operation": "http://evening-basin-25603.herokuapp.com/Nti/task3/bank/Bank.php"
             }
