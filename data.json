@@ -6,7 +6,7 @@
             "src": "media/img-1.a1f6d022.jpg",
             "Demo_href": "http://shops1.herokuapp.com/public/login",
             "Project_Description": "system with authorization to save shops items and get data from it ",
-            "video_src": "",
+            "video_src": "https://www.youtube.com/embed/qNgIKbSRKKs",
             "Github_href": "https://github.com/abanoubsamirnaguib/pos-app/",
             "Project_Details": [
                 "Login system with muti-auth system using Laratrust Laravel package .",
