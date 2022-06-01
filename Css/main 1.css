@@ -557,7 +557,8 @@ button:focus {
         background: #191919;
         width: 500px;
         height: 100%!important;
-        padding: 65px 55px;
+        /* padding: 65px 55px; */
+        padding: 0px 10px;
         position: fixed;
         right: 0;
         top: 0;
