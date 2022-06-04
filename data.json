@@ -239,8 +239,8 @@
             "subtitle": "Artist Abanoub Samir Official page",
             "Project_Description": "Artist Abanoub Samir Official page , you can find last music works and news and the last videos of Abanoub Samir ",
             "src": "media/ArtistAbanoubSamir.jpg",
-            "video_src": "",
-            "Github_href": "https://www.youtube.com/embed/Di-sMKIx57U",
+            "video_src": "https://www.youtube.com/embed/Di-sMKIx57U",
+            "Github_href": "https://github.com/abanoubsamirnaguib/ArtistAbanoubSamir",
             "Demo_href": "https://abanoubsamirnaguib.github.io/ArtistAbanoubSamir/Home",
             "Project_Details": [
                 "In vuejs project as frontend :-",
