@@ -1438,6 +1438,10 @@ button:focus {
     .gallery-section {
         padding-bottom: 73px
     }
+    .hx-service-single .hx-service-content {
+        top: 0;
+        background: rgba(0, 0, 0, .99)
+    }
 }
 
 .gallery-section .gallery-filters {
@@ -3036,5 +3040,17 @@ button:focus {
         visibility: visible;
         left: 0;
     }
+    @media(max-width: 767px) {
+        .tp-protfolio-area .tp-protfolio-single .tp-protfolio-text{
+            opacity: 1;
+            visibility: visible;
+            left: 0;
+        }
+        .tp-protfolio-area .tp-protfolio-single .tp-protfolio-img:before{
+            opacity: 1;
+            visibility: visible;
+            left: 0;
+        }
     
+    }
 /*# sourceMappingURL=main.0123924c.chunk.css.map */
